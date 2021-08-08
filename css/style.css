@@ -1,0 +1,215 @@
+*{
+   font-family: 'Anton', sans-serif;
+   font-family: 'Black Han Sans', sans-serif;
+   box-sizing: border-box;
+
+}
+body{
+   background-color: #fedc00;
+   
+}
+
+.hidden{
+   display: none;
+}
+
+/* #bgm audio{
+   position: relative;
+   left: 1550px;
+  } */
+
+#weather span:first-child{
+   font-size: 30px;
+}
+#weather span:last-child{
+   font-size: 20px;
+}
+
+#picture{
+   float: right;
+   margin-right: 30px;
+   width: 400px;
+    height: 500px;
+    background: #fedc00;
+    border: 10px inset #fedc00;
+    outline: 10px outset black;
+}
+#picture img{
+   width: 380px;
+   height: 480px;
+}
+
+#NameForm,#greeting{
+   text-align: center;
+   position: relative;
+}
+
+#NameForm input{
+   background: 0;
+   border: 0;
+   outline: none;
+   width: 80vw;
+   max-width: 800px;
+   font-size: 60px;
+   text-align: center;
+  
+}
+
+#WriteForm input{
+   background: 0;
+   border: 0;
+   border-bottom: 2px solid #fedc00;
+   outline: none;
+   width: 80vw;
+   max-width: 500px;
+   font-size: 30px;
+   text-align: center;
+   color: white;
+}
+#NameForm input::-webkit-input-placeholder{
+   color : black;
+}
+
+#NameForm button{
+   border: 2px solid black;
+   padding: 5px;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px ;
+   border-bottom-left-radius: 10px ;
+   border-bottom-right-radius: 10px ;
+   background-color: #fedc00;
+  
+
+}
+
+#NameForm button:hover{
+   /* color: black; */
+   /* background-color: wheat; */
+   background-color: white;
+}
+
+#WriteForm input::-webkit-input-placeholder{
+   color : grey;
+}
+
+
+
+#greeting{
+   font-size: 60px;
+}
+
+
+#clock{
+   text-align: center;
+   position: relative;
+   margin-top: 40px;
+   font-size: 30px;
+
+}
+#clock String{
+   font-size: 40px;
+}
+
+.logoClick img{
+   display: block;
+   margin: auto;
+}
+.logoClick h2{
+   text-align: center;
+}
+
+.sidenav {
+   height:100%;
+   width:0;
+   position: fixed;
+   z-index:1;
+   top: 0;
+   left: 0;
+   background-color: black;
+   overflow-x: hidden;
+   transition:0.5s ease-in-out;
+   padding-top: 60px;
+}
+
+.sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color:#fedc00;
+   display: block;
+   transition: 0.2s ease-in-out;
+}
+.sidenav a:hover, .offcanvas a:focus {
+   color: #000;
+}
+
+#mysidenav{
+   color: #fedc00;
+   text-align: center;
+}
+
+#mysidenav hr{
+   border : solid 2px #fedc00;
+}
+
+
+.closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px !important;
+   margin-left: 50px;
+}
+
+.box1{
+   margin: 20px;
+   padding: 20px;
+   border: 2px solid grey;
+   width: 500px;
+   height: 250px;
+   margin: 0 auto;
+   /* border: 2px solid grey;
+   width: 300px;
+   margin: 0 auto; */
+}
+.box2{
+   margin: 20px;
+   padding: 20px;
+   border: 2px solid grey;
+   width: 500px;
+   height: 250px;
+   margin: 0 auto;
+}
+#titleTodo,#titleDone {
+  padding-right:400px;
+}
+
+ #todo-list li span {
+   font-size: 30px;
+}
+
+#done-list li span {
+   font-size: 30px;
+}
+
+#todo-list li button {
+   font-size: 15px;
+   position: relative;
+   bottom: 5px;
+   left: 30px;
+   background-color: #fedc00;
+}
+
+#done-list li button {
+   font-size: 15px;
+   position: relative;
+   bottom: 5px;
+   left: 30px;
+   background-color: #fedc00;
+}
+
+
+#todo-list li button:last-child{
+   position: relative;
+   left: 40px;
+} 

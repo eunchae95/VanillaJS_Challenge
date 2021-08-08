@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Butter</title>
+</head>
+<body>
+<div>
+<div id= "bgm" style="float:right">
+<audio src = "audio/Butter.mp3" autoplay muted controls></audio>
+</div>
+<br>
+<div id="weather" style="float: right; clear: both;">
+    <span></span>
+    <br>
+    <span></span>
+</div>
+<br>
+<form id = "NameForm" class = "hidden" style="clear: both;">
+    <button>
+    <input required type="text" placeholder="What is your name?"/>
+    </button>
+</form>
+<h1 id="greeting" class = "hidden"></h1>
+<h2 id="clock">00:00:00</h2>
+<div id="picture"></div>
+<div id= "mysidenav" class="sidenav">
+    <a href='#' class="closebtn" onclick='closeNav()'>X</a>
+    <div>
+    <hr>
+    <h1>TO DO LIST</h1>
+    <hr>
+    <br>
+    </div>
+    <div id= writeTodo>
+        <form id= "WriteForm">
+            <input
+            required
+            type ="text"
+            placeholder="Write a To Do and Press Enter"/>
+        </form>
+    </div>
+    <br>
+    <div id = "Todo">
+        <h2 id = "titleTodo">TO DO!</h2>
+        <div class = "box1"><ul id= "todo-list"></ul></div>
+    </div>
+    <br>
+    <div id = "Done">
+        <h2 id = "titleDone">DONE!</h2>
+        <div class = "box2"><ul id= "done-list"></ul></div>
+    </div>
+</div> 
+<div class="logoClick" style="position: absolute; width: 100%;">
+    <img src="bgimg/butterLogo.png" onclick='openTodoList()' >
+    <h2>Click Butter!</h2>
+</div>
+</div>
+<script src = "js/greeting.js"></script>
+<script src = "js/clock.js"></script>
+<script src = "js/sidebar.js"></script>
+<script src = "js/todo.js"></script>
+<script src = "js/weather.js"></script>
+<script src = "js/background.js"></script>
+</body>
+</html>
